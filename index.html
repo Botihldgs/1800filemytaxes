@@ -253,7 +253,7 @@ footer strong{color:#fff}
   /* Site settings. Paste your Web3Forms access key and your booking link here. */
   window.SITE = {
     web3formsKey: "2d5edc42-7093-4dc4-9a52-9f110c52dfd7",
-    bookingUrl: ""
+    bookingUrl: "https://calendly.com/george-1800taxsupport/1800filemytaxes-tax-consultation"
   };
 </script>
 </head>
@@ -858,7 +858,7 @@ footer strong{color:#fff}
     $("#lead-form").addEventListener("submit", function (e) { e.preventDefault(); submitLead(o, list); });
     if (CFG.bookingUrl) {
       var p = document.createElement("p");
-      p.innerHTML = '<a class="btn btn-dark" href="' + CFG.bookingUrl + '" rel="noopener">Book your $59 consultation now</a>';
+      p.innerHTML = '<a class="btn btn-dark" href="' + CFG.bookingUrl + '" rel="noopener">Book your $59 consultation now</a><span class="small" style="display:block;margin-top:8px">The $59 is collected separately after you book. We email you the details.</span>';
       p.style.marginTop = "16px";
       $(".lead", box).appendChild(p);
     }
